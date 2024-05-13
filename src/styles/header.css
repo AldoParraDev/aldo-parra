@@ -1,0 +1,12 @@
+.header {
+   @apply w-full flex items-center justify-between px-[3%] bg-header py-4;
+   &__button {
+      @apply text-gray text-[24px];
+   }
+   @screen laptop {
+      @apply justify-center;
+      &__button {
+         @apply hidden;
+      }
+   }
+}

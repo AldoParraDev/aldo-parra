@@ -1,0 +1,4 @@
+.movies {
+   @apply w-full flex items-center justify-center relative;
+   height: calc(100vh - 72px);
+}

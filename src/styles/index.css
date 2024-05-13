@@ -1,0 +1,25 @@
+@import './header.css';
+@import './movies.css';
+@import './filtermovies.css';
+@import './listmovies.css';
+@import './cardmovies.css';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+main {
+   @apply bg-dark w-screen h-screen flex flex-col items-center justify-center text-white;
+   font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

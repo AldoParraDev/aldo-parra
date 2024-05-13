@@ -1,0 +1,56 @@
+.filter-movies {
+   @apply absolute top-0 w-[320px] h-full left-0 z-[10] px-3 py-2 bg-black pointer-events-none opacity-0 transition-all ease-in-out flex flex-col gap-2;
+   &.open {
+      @apply opacity-100 pointer-events-auto transition-all ease-in-out;
+   }
+   &__close {
+      @apply absolute top-0 right-0 p-2 text-gray text-[24px];
+   }
+   @screen laptop {
+      @apply relative w-[20%] h-full py-2 px-4 opacity-100 pointer-events-auto;
+      &__close {
+         @apply hidden;
+      }
+   }
+   &__title {
+      @apply text-[19px] font-semibold text-primary;
+   }
+   &__genres {
+      @apply w-full flex flex-col gap-2;
+   }
+   &__title-genres {
+      @apply text-[15px] font-medium;
+   }
+   &__list-genres {
+      @apply w-auto flex flex-wrap gap-2;
+      &__item {
+         @apply flex items-center gap-2;
+         label {
+            @apply text-[14px];
+         }
+      }
+   }
+}
+
+.ctn-input-search {
+   @apply w-auto flex items-center relative;
+}
+
+.input-search {
+   @apply bg-transparent w-full h-[40px] px-2 border border-gray/[0.5] rounded-md text-[15px] text-gray;
+   &::placeholder {
+      @apply text-gray/[0.3] italic;
+   }
+}
+
+.textarea-search {
+   @apply bg-transparent w-full h-[100px] p-2 border border-gray/[0.5] rounded-md text-[15px] text-gray;
+   &::placeholder {
+      @apply text-gray/[0.3] italic;
+   }
+}
+
+
+.icon-search {
+   @apply absolute pointer-events-none right-[10px] text-[22px] text-gray/[0.5];
+}
